@@ -1,5 +1,5 @@
 export const HAS_MEDIA_SESSION =
-  window && window.navigator && 'mediaSession' in window.navigator;
+  typeof window !== "undefined" && window && window.navigator && 'mediaSession' in window.navigator;
 
 interface Artwork {
   src: string;
